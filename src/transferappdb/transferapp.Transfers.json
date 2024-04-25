@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "662adb897f2e05a3255af086"
+  },
+  "user_id": "662a8b92d599f0e24637328a",
+  "origin_account": "0000000000201",
+  "id_origin_account": "662aa18dd599f0e246373293",
+  "destination_account": "cdcdc",
+  "transfer_date": {
+    "$date": "2024-04-25T22:39:05.489Z"
+  },
+  "amount": 33,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662adc59fdfaa4d4ebe063ec"
+  },
+  "user_id": "662a8b92d599f0e24637328a",
+  "origin_account": "0000000000201",
+  "id_origin_account": "662aa18dd599f0e246373293",
+  "destination_account": "cdcdc",
+  "transfer_date": {
+    "$date": "2024-04-25T22:42:33.544Z"
+  },
+  "amount": 33,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662adc7be2260fef2edcc637"
+  },
+  "user_id": "662a8b92d599f0e24637328a",
+  "origin_account": "0000000000201",
+  "id_origin_account": "662aa18dd599f0e246373293",
+  "destination_account": "cdcdc",
+  "transfer_date": {
+    "$date": "2024-04-25T22:43:07.166Z"
+  },
+  "amount": 33,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662adc8ee2260fef2edcc63b"
+  },
+  "user_id": "662a8b92d599f0e24637328a",
+  "origin_account": "0000000000201",
+  "id_origin_account": "662aa18dd599f0e246373293",
+  "destination_account": "cdcdc",
+  "transfer_date": {
+    "$date": "2024-04-25T22:43:26.863Z"
+  },
+  "amount": 12.33,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662adce9527a0fb0596cd8fa"
+  },
+  "user_id": "662a8b92d599f0e24637328a",
+  "origin_account": "0000000000201",
+  "id_origin_account": "662aa18dd599f0e246373293",
+  "destination_account": "dcdcd",
+  "transfer_date": {
+    "$date": "2024-04-25T22:44:57.480Z"
+  },
+  "amount": 200,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662adf5acfd4703867ea8ce5"
+  },
+  "user_id": "662a8b92d599f0e24637328a",
+  "origin_account": "0000000000201",
+  "id_origin_account": "662aa18dd599f0e246373293",
+  "destination_account": "dcdcd",
+  "transfer_date": {
+    "$date": "2024-04-25T22:55:22.888Z"
+  },
+  "amount": 39,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662adfae7b3a630ebe053fd0"
+  },
+  "user_id": "662a8b92d599f0e24637328a",
+  "origin_account": "0000000000201",
+  "id_origin_account": "662aa18dd599f0e246373293",
+  "destination_account": "cdcdc",
+  "transfer_date": {
+    "$date": "2024-04-25T22:56:46.369Z"
+  },
+  "amount": 200,
+  "__v": 0
+}]
