@@ -58,6 +58,7 @@ exports.getTransfersGroupedByDestinationAccount = async (req, res) => {
       ]);
       return res.status(200).json(transfers);
     } catch (error) {
+      console.log(error);
       return res.status(500).json({ message: 'Error al obtener las transferencias agrupadas por cuenta de destino' });
     }
 };
@@ -66,9 +67,7 @@ exports.getTop3TransfersByAmount = async (req, res) => {
   const { user, body } = req;
   const { username } = user;
     try {
-      console.log('ss')
       const transfers = await Transfer.find({ user_id: username }).sort({ amount: -1 }).limit(3);
-      console.log(transfers);
       return res.status(200).json(transfers);
     } catch (error) {
       return res.status(500).json({ message: 'Error al obtener las 3 transferencias con el monto más alto' });
@@ -78,7 +77,6 @@ exports.getTop3TransfersByAmount = async (req, res) => {
 exports.getTransfersGroupedByOriginAccount = async (req, res) => {
   const { user } = req;
   const { username } = user;
-  
   try {
     const transfers = await Transfer.find({ user_id: username }).sort('origin_account');
 
@@ -91,7 +89,6 @@ exports.getTransfersGroupedByOriginAccount = async (req, res) => {
       return acc;
     }, {});
 
-    console.log(groupedTransfers, ' dd');
     return res.status(200).json(groupedTransfers);
   } catch (error) {
     console.error(error);

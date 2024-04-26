@@ -17,8 +17,7 @@ router.post('/login', async (req, res) => {
     const token = jwt.sign({ username: user.id }, 'secret_key', { expiresIn: '1h' });
 
     const accounts = await Account.find({ user_id: 'sxsx'});
-    console.log(accounts);
-
+  
     let information_user = {
       accounts: accounts
     }
