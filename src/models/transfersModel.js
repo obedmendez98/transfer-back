@@ -7,6 +7,7 @@ const transferSchema = new mongoose.Schema({
   destination_account: { type: String, required: true },
   transfer_date: { type: Date, default: Date.now },
   amount: { type: Number, required: true },
+  concept: { type: String, required: true },
 }, { collection: 'Transfers' });
 
 module.exports = mongoose.model('Transfers', transferSchema);

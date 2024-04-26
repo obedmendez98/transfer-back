@@ -66,7 +66,9 @@ exports.getTop3TransfersByAmount = async (req, res) => {
   const { user, body } = req;
   const { username } = user;
     try {
+      console.log('ss')
       const transfers = await Transfer.find({ user_id: username }).sort({ amount: -1 }).limit(3);
+      console.log(transfers);
       return res.status(200).json(transfers);
     } catch (error) {
       return res.status(500).json({ message: 'Error al obtener las 3 transferencias con el monto más alto' });
